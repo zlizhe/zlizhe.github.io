@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   
   
-  <title>  hexo-theme-nayo </title>
+  <title>  «｛ 小站 /〉 </title>
 
  
   
@@ -63,7 +63,7 @@
 
 <div class="profile sildeUpMin">
 	
-		<img class="avatar" src="/">
+		<img class="avatar" src="/images/header.jpg">
 
 		<p class="author">Keep All Simple</p>
 		
@@ -85,12 +85,17 @@
 	   
 	<div class="article-header">
 	    
-		<a class="article-title" href="/2018/08/31/hello-world/">Hello World</a>  
+		<a class="article-title" href="/2016/10/11/Mongodb-Replica-Set-集群配置/">Mongodb Replica Set 集群配置</a>  
 	       
 		 
 
 		<div class="article-meta">
-			<time>Aug 31, 2018</time>
+			<time>Oct 11, 2016</time>
+			
+				<span class="iconfont icon-star"></span>
+				            
+						<a class="article-tag" href="/tags/mongodb/">mongodb</a>           
+				
 			
 		</div>
 	</div>
@@ -100,22 +105,102 @@
 
     
 	<div class="typo article-excerpt">	
-		 
-			<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+		
+			<blockquote>
+<p>Replica Set  为 mongodb 3.0 以上版本官方推荐的群集方法<br>Mongodb 3.0 以上版本使用 Replica Set 搭建 Mongodb 集群服务，原 master-slave 则在3.0以上版本为不推荐使用<br><a href="https://docs.mongodb.com/manual/core/replica-set-architectures/" target="_blank" rel="noopener">https://docs.mongodb.com/manual/core/replica-set-architectures/</a><br>Replica Set （副本集）支持一台写，多台读, 分片 (sharding) 则可以支持每个分片放置副本集 <a href="https://docs.mongodb.com/manual/sharding/" target="_blank" rel="noopener">https://docs.mongodb.com/manual/sharding/</a></p>
+</blockquote>
+<h2 id="防火墙设定"><a href="#防火墙设定" class="headerlink" title="防火墙设定"></a>防火墙设定</h2>
 		  	  
 	</div>
 
 	<div class="article-bottom">
-		<a class="article-readmore" href="/2018/08/31/hello-world/">Continue</a> 	
+		<a class="article-readmore" href="/2016/10/11/Mongodb-Replica-Set-集群配置/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2016/10/11/Mysql-群集配置/">Mysql 群集配置</a>  
+	       
+		 
+
+		<div class="article-meta">
+			<time>Oct 11, 2016</time>
+			
+				<span class="iconfont icon-star"></span>
+				            
+						<a class="article-tag" href="/tags/mysql/">mysql</a>           
+				
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="typo article-excerpt">	
+		
+			<blockquote>
+<p>Mysql 配置读写分离, 降低读服务器压力</p>
+</blockquote>
+<h2 id="主-Mysql-配置"><a href="#主-Mysql-配置" class="headerlink" title="主 Mysql 配置"></a>主 Mysql 配置</h2><h3 id="编辑主-Mysql-服务器的MySQL配置文件my-cnf"><a href="#编辑主-Mysql-服务器的MySQL配置文件my-cnf" class="headerlink" title="编辑主 Mysql 服务器的MySQL配置文件my.cnf"></a>编辑主 Mysql 服务器的MySQL配置文件my.cnf</h3><blockquote>
+<p>一般位置（/etc/my.cnf / /usr/local/Cellar/mysql/5.6.25/my.cnf）<br>在[mysqld]下面添加以下参数：<br></p></blockquote>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2016/10/11/Mysql-群集配置/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2016/04/10/Arduino-灯光控制/">Arduino 灯光控制</a>  
+	       
+		 
+
+		<div class="article-meta">
+			<time>Apr 10, 2016</time>
+			
+				<span class="iconfont icon-star"></span>
+				            
+						<a class="article-tag" href="/tags/arduino/">arduino</a>           
+				
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="typo article-excerpt">	
+		
+			<blockquote>
+<p>使用 Arduino 光敏、人体红外传感器、舵机来控制灯光开启。这里以不破坏原则使用舵机推动开关来实现开灯和关灯。 实现目标：区域内光线强度不够时，同时有人在区域内驱动舵机推动开关开灯，无人在或光线强度足够则关灯</p>
+</blockquote>
+<h2 id="接线图"><a href="#接线图" class="headerlink" title="接线图"></a>接线图</h2><p><img src="/2016/04/10/Arduino-灯光控制/arduino-1.jpg" alt="接线图"></p>
+<h2 id="控制代码"><a href="#控制代码" class="headerlink" title="控制代码"></a>控制代码</h2>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2016/04/10/Arduino-灯光控制/">Continue</a> 	
 	</div>	
     
 </article>     
