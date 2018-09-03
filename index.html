@@ -165,6 +165,49 @@
 	   
 	<div class="article-header">
 	    
+		<a class="article-title" href="/2016/05/05/互换-Ctrl-Caps-Lock-按键/">互换 Ctrl / Caps_Lock 按键</a>  
+	       
+		 
+
+		<div class="article-meta">
+			<time>May 05, 2016</time>
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="typo article-excerpt">	
+		
+			<blockquote>
+<p>交换 Caps_Lock 与 Ctrl 键，与 Unix 键位统一方便快捷键使用</p>
+</blockquote>
+<h2 id="Mac-OS"><a href="#Mac-OS" class="headerlink" title="Mac OS"></a>Mac OS</h2><p>打开系统编好设置 选择 “键盘” 菜单，在 “键盘” 选项卡右下角打开 “修饰键…” 选单</p>
+<p>大写锁定键 -&gt; 选择 Control<br>Control键 -&gt; 选择 大写锁定键</p>
+<p>选择 “好” 即可完成设置</p>
+<blockquote>
+<p>新版系统中 轻触大写锁定键 的功能为 切换中英文输入法，若要打开大写锁定需要长按大写锁定键（即修改后的 Control 键位）</p>
+</blockquote>
+<h2 id="Ubuntu-Debian"><a href="#Ubuntu-Debian" class="headerlink" title="Ubuntu / Debian"></a>Ubuntu / Debian</h2>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2016/05/05/互换-Ctrl-Caps-Lock-按键/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
 		<a class="article-title" href="/2016/04/10/Arduino-灯光控制/">Arduino 灯光控制</a>  
 	       
 		 
@@ -196,6 +239,246 @@
 
 	<div class="article-bottom">
 		<a class="article-readmore" href="/2016/04/10/Arduino-灯光控制/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2015/12/31/配置-Git-服务/">配置 Git 服务</a>  
+	       
+		 
+
+		<div class="article-meta">
+			<time>Dec 31, 2015</time>
+			
+				<span class="iconfont icon-star"></span>
+				            
+						<a class="article-tag" href="/tags/git/">git</a>           
+				
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="typo article-excerpt">	
+		
+			<blockquote>
+<p>配置 Git 服务，创建 Git 仓库</p>
+</blockquote>
+<h2 id="客户端密钥"><a href="#客户端密钥" class="headerlink" title="客户端密钥"></a>客户端密钥</h2><blockquote>
+<p>每个需要使用 Git 的客户端都需要生成一份密钥, 首先去 ~/.ssh 查看自己是否已经有密钥</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh/</span><br><span class="line">$ ls</span><br><span class="line">authorized_keys   id_dsa       known_hosts</span><br><span class="line">config            id_dsa.pub</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>默认命名为 id_dsa / id_rsa 个人文件夹目录 ~/.ssh/</p>
+</blockquote>
+<blockquote>
+<p>其中一个带有 .pub 扩展名， .pub 文件是你的公钥，另一个则是私钥。 如果找不到这样的文件（或者根本没有 .ssh 目录），你可以通过运行 ssh-keygen 程序来创建它们。</p>
+</blockquote>
+<h3 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h3>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2015/12/31/配置-Git-服务/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2015/12/11/VIM-配置/">VIM 配置</a>  
+	       
+		 
+
+		<div class="article-meta">
+			<time>Dec 11, 2015</time>
+			
+				<span class="iconfont icon-star"></span>
+				            
+						<a class="article-tag" href="/tags/vim/">vim</a>           
+				            
+						<a class="article-tag" href="/tags/编辑器/">编辑器</a>           
+				
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="typo article-excerpt">	
+		
+			<blockquote>
+<p>VIM 7.4 以上版本，大部分配置同时适用于 Linux / Mac OS 终端 以及 gVim</p>
+</blockquote>
+<h2 id="安装插件管理器"><a href="#安装插件管理器" class="headerlink" title="安装插件管理器"></a>安装插件管理器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle</span><br></pre></td></tr></table></figure>
+<h2 id="完整配置"><a href="#完整配置" class="headerlink" title="完整配置"></a>完整配置</h2><blockquote>
+<p>编辑本用户的 vim 配置文件<br>Linux / Mac OS 一般创建文件 ~/.vimrc<br>Windows 可在用户名文件夹下创建 .vimrc 文件 (C:\Users\USERNAME)</p>
+</blockquote>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2015/12/11/VIM-配置/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2015/11/02/Oh-My-Zsh/">Oh My Zsh</a>  
+	       
+		 
+
+		<div class="article-meta">
+			<time>Nov 02, 2015</time>
+			
+				<span class="iconfont icon-star"></span>
+				            
+						<a class="article-tag" href="/tags/zsh/">zsh</a>           
+				            
+						<a class="article-tag" href="/tags/bash/">bash</a>           
+				            
+						<a class="article-tag" href="/tags/终端/">终端</a>           
+				
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="typo article-excerpt">	
+		
+			<blockquote>
+<p>MAC 下的默认命令行工具是 bash 但同时也有 zsh 等，通过扩展 zsh 的  Oh My Zsh 来让我们的命令行更加便捷，提供诸如主题、插件等</p>
+</blockquote>
+<blockquote>
+<p>zsh是兼容bash的，所以在bash上的绝大部分命令在zsh也是可用的 Oh My Zsh 只是 zsh的扩展，可以在任意终端上使用只需要有zsh支持即可安装该扩展</p>
+</blockquote>
+<h2 id="查看-Zsh-版本"><a href="#查看-Zsh-版本" class="headerlink" title="查看 Zsh 版本"></a>查看 Zsh 版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zsh -version</span><br></pre></td></tr></table></figure>
+<p>输出类似版本号即已安装 zsh<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zsh 5.0.8 (x86_64-apple-darwin15.0)</span><br></pre></td></tr></table></figure></p>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2015/11/02/Oh-My-Zsh/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2015/08/26/Homebrew-安装-PHP环境/">Homebrew 安装 PHP环境</a>  
+	       
+		 
+
+		<div class="article-meta">
+			<time>Aug 26, 2015</time>
+			
+				<span class="iconfont icon-star"></span>
+				            
+						<a class="article-tag" href="/tags/homebrew/">homebrew</a>           
+				            
+						<a class="article-tag" href="/tags/php/">php</a>           
+				
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="typo article-excerpt">	
+		
+			<blockquote>
+<p>homebrew 是 os x 上的包管理控制器类似于 apt-get 、yum 官网是 <a href="http://brew.sh" target="_blank" rel="noopener">http://brew.sh</a></p>
+</blockquote>
+<h2 id="安装方式-Homebrew"><a href="#安装方式-Homebrew" class="headerlink" title="安装方式 Homebrew"></a>安装方式 Homebrew</h2><p>打开 终端 执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span><br></pre></td></tr></table></figure>
+<p>安装完成后更新 brew 源</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew update <span class="comment">#更新brew</span></span><br></pre></td></tr></table></figure>
+<h3 id="brew-常用命令"><a href="#brew-常用命令" class="headerlink" title="brew 常用命令"></a>brew 常用命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">brew install APPNAME <span class="comment">#安装应用</span></span><br><span class="line"></span><br><span class="line">brew search APPNAME <span class="comment"># 搜索已有应用</span></span><br><span class="line"></span><br><span class="line">brew tap  GIHUB/user <span class="comment"># 安装扩展</span></span><br><span class="line"></span><br><span class="line">brew uncap GITHUB/user <span class="comment">#移除扩展</span></span><br><span class="line"></span><br><span class="line">brew remove APPNAME <span class="comment">#移除应用</span></span><br><span class="line"></span><br><span class="line">brew upgrade APPNAME <span class="comment">#更新应用</span></span><br><span class="line"></span><br><span class="line">brew options APPNAME <span class="comment">#查看安装信息</span></span><br><span class="line"></span><br><span class="line">brew info APPNAME <span class="comment">#查看应用信息</span></span><br></pre></td></tr></table></figure>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2015/08/26/Homebrew-安装-PHP环境/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2015/07/09/VIM-配色方案-Molokai/">VIM 配色方案 Molokai</a>  
+	       
+		 
+
+		<div class="article-meta">
+			<time>Jul 09, 2015</time>
+			
+				<span class="iconfont icon-star"></span>
+				            
+						<a class="article-tag" href="/tags/vim/">vim</a>           
+				            
+						<a class="article-tag" href="/tags/molokai/">molokai</a>           
+				
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="typo article-excerpt">	
+		
+			<p>修改 VIM 配置文件来支持本本色方案</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim ~/.vimrc</span><br></pre></td></tr></table></figure>
+<p>添加以下配置</p>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2015/07/09/VIM-配色方案-Molokai/">Continue</a> 	
 	</div>	
     
 </article>     

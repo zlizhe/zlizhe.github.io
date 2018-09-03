@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  
+  
+  <title>  Oh My Zsh |   «｛ 小站 /〉 </title>
+
+ 
+  <link rel="stylesheet" href="/nayo.min.css"> 
+</head>  
+  <body>   
+    
+      <header class="header">
+	
+  <nav class="header-nav">        
+
+    <span class="iconfont icon-menu mobile-toggle"></span>   	
+
+    <div class="header-menu">          
+              
+          
+            <a class="header-menu-link" id="header-menu-home" href="/">
+              <i class="iconfont icon-home">  
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-archives" href="/archives">
+              <i class="iconfont icon-archives">  
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-search">
+              <i class="iconfont icon-search">  
+            </i></a>
+          
+                  
+    </div>  
+    
+  </nav>
+</header>
+
+   
+
+      <div class="container">       
+          
+          
+            <section class="main">  
+          
+
+          <article class="post">
+  
+	<div class="post-header">
+
+	<p class="post-title">	
+		Oh My Zsh
+	</p>
+			
+
+	<div class="meta-info">	
+	<span>
+		Nov 02, 2015
+	</span>
+
+	
+	
+		<i class="iconfont icon-words"></i>
+		<span>
+			1102
+		</span>
+	
+</div>
+
+</div> 
+	 
+
+	  <div class="typo post-content slideDownMin">
+
+		
+
+			
+					<blockquote>
+<p>MAC 下的默认命令行工具是 bash 但同时也有 zsh 等，通过扩展 zsh 的  Oh My Zsh 来让我们的命令行更加便捷，提供诸如主题、插件等</p>
+</blockquote>
+<blockquote>
+<p>zsh是兼容bash的，所以在bash上的绝大部分命令在zsh也是可用的 Oh My Zsh 只是 zsh的扩展，可以在任意终端上使用只需要有zsh支持即可安装该扩展</p>
+</blockquote>
+<h2 id="查看-Zsh-版本"><a href="#查看-Zsh-版本" class="headerlink" title="查看 Zsh 版本"></a>查看 Zsh 版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zsh -version</span><br></pre></td></tr></table></figure>
+<p>输出类似版本号即已安装 zsh<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zsh 5.0.8 (x86_64-apple-darwin15.0)</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>若没有安装 zsh 可通过 apt-get 进行安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install zsh</span><br></pre></td></tr></table></figure></p>
+<h2 id="安装扩展-Oh-My-Zsh"><a href="#安装扩展-Oh-My-Zsh" class="headerlink" title="安装扩展 Oh My Zsh"></a>安装扩展 Oh My Zsh</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>没有安装 wget 的可以使用 curl</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>看到以下画面即为安装成功</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">         __                                     __   </span><br><span class="line">  ____  / /_     ____ ___  __  __   ____  _____/ /_  </span><br><span class="line"> / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ </span><br><span class="line">/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / </span><br><span class="line">\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  </span><br><span class="line">                        /____/                       ....is now installed!</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Please look over the ~/.zshrc file to select plugins, themes, and options.</span><br><span class="line"></span><br><span class="line">p.s. Follow us at https://twitter.com/ohmyzsh.</span><br><span class="line"></span><br><span class="line">p.p.s. Get stickers and t-shirts at http://shop.planetargon.com.</span><br></pre></td></tr></table></figure>
+<h2 id="修改-Oh-My-Zsh-主题本色"><a href="#修改-Oh-My-Zsh-主题本色" class="headerlink" title="修改 Oh My Zsh 主题本色"></a>修改 Oh My Zsh 主题本色</h2><p>编辑配置文件于本用户目录下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure>
+<p>编辑主题 找到行 ZSH_THEME</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME=<span class="string">"robbyrussel"</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>修改 ZSH_THEME 值来修改主题，主题样式参考 <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes" target="_blank" rel="noopener">https://github.com/robbyrussell/oh-my-zsh/wiki/Themes</a> 编辑完成后新建一个窗口即可看到效果 </p>
+</blockquote>
+<h2 id="修改默认终端为-zsh"><a href="#修改默认终端为-zsh" class="headerlink" title="修改默认终端为 zsh"></a>修改默认终端为 zsh</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s $(<span class="built_in">which</span> zsh)</span><br></pre></td></tr></table></figure>
+<p>重新登录 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="variable">$SHELL</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>若显示为 zsh 即修改成功, 新版本 Oh My Zsh 只需要提供 root 密码即可自动修改</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh</span><br></pre></td></tr></table></figure>
+  	
+					
+	  </div>     
+	  
+
+	
+<div class="post-meta">
+      	
+
+      
+        <i class="iconfont icon-tag"></i>     
+          <a class="tag-link" href="/tags/bash/">bash</a> <a class="tag-link" href="/tags/zsh/">zsh</a> <a class="tag-link" href="/tags/终端/">终端</a>    
+      	
+</div>
+
+
+
+
+
+<div class="post-footer">
+  <div class="pf-left">
+      <img class="pf-avatar" src="/images/header.jpg">
+      <p class="pf-des">Zack Lee</p>
+  </div>
+
+  <div class="pf-right">           
+      <div class="pf-links">
+         
+        
+	
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+	
+	<span class="share-btn">
+	<span class="iconfont icon-share"></span>
+	</span>
+
+
+	<div class="-mob-share sildeUpMin">
+		   			             
+            <a class="iconfont  icon-share-weixin -mob-share-weixin"></a>		
+     	   			             
+            <a class="iconfont  icon-share-twitter -mob-share-twitter"></a>		
+     	   
+	</div>	
+
+      </div>  
+    <nav class="pf-paginator">
+      
+         
+          <a href="/2015/12/11/VIM-配置/" data-hover="VIM 配置">Prev</a>      
+            
+        
+      
+        
+        <a href="/2015/08/26/Homebrew-安装-PHP环境/" data-hover="Homebrew 安装 PHP环境"> Next</a>
+            
+  </nav>   
+  </div>
+</div> 
+	
+	
+</article>
+
+	<div class="toc-container">
+			<div class="sidebar">
+			<p class="toc-title">
+				<i class="iconfont icon-toc"></i>
+				Contents
+			</p>
+			<div class="toc-list">
+				<ol class="toc-inner"><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#查看-Zsh-版本"><span class="toc-inner-text">查看 Zsh 版本</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#安装扩展-Oh-My-Zsh"><span class="toc-inner-text">安装扩展 Oh My Zsh</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#修改-Oh-My-Zsh-主题本色"><span class="toc-inner-text">修改 Oh My Zsh 主题本色</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#修改默认终端为-zsh"><span class="toc-inner-text">修改默认终端为 zsh</span></a></li></ol>
+			</div>
+		</div>
+	</div>
+
+          </section> 
+      </div>            
+    
+    <a id="backTop">
+      <span>
+        <i class="iconfont icon-backtotop"></i>
+      </span>
+    </a> 
+
+  
+    
+    <div class="search-container sildeUpMin">
+        <div class="search-header">
+            <input type="text" placeholder="Typing Something here." id="search-input" class="search-input">
+            <span class="search-cancel">
+                <i class="iconfont icon-cancel">
+            </i></span>
+        </div>
+        <div id="search-result" class="search-result"></div>
+    </div>
+ 
+     <div class="mobile-menu">      
+
+      
+      <img class="mobile-menu-icon" src="/images/favicon.png">   
+      
+
+         
+            
+
+            <a class="mobile-menu-link" href="/">Home
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/archives">Archives
+            </a>
+            
+         
+                          
+
+            <a class="mobile-menu-link mobile-menu-search" href="#">Search </a>                 
+            
+         
+      
+</div>        
+    
+
+
+
+     
+    
+
+<footer id="footer">	    
+
+		
+		<div class="footer-copyright">
+		&copy;
+		Zack Lee
+		<br>
+
+		Theme By
+		<a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>	
+		</div>			
+	 
+</footer>   
+
+  
+
+    <script src="/nayo.bundle.js"></script>           
+  </body>        
+</html>
