@@ -1,15 +1,18 @@
-name: Pages
+name: GitHub Pages
 
 on:
   push:
     branches:
-      - master # default branch
+      - master
+  pull_request:
 
 jobs:
-  pages:
+  deploy:
     runs-on: ubuntu-22.04
     permissions:
       contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
 
@@ -27,7 +30,8 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm ci
-      - run: npm run
+      - run: npm run build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
