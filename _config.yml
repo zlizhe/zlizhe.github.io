@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://paint.zlizhe.com
+url: http://paint.zlizhe.com
 root: /
 permalink: :title-:year-:month-:day/
 permalink_defaults:
