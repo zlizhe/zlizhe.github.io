@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://zlizhe.com
+url: https://paint.zlizhe.com
 root: /
 permalink: :title-:year-:month-:day/
 permalink_defaults:
@@ -83,5 +83,6 @@ theme: Nayo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/zlizhe/zlizhe.github.io.git
-  branch: gh-pages
+  repo: http://git.res.zlizhe.com/paint.zlizhe.com.git
+  branch: master
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }})"

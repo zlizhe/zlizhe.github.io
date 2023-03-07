@@ -1,10 +1,10 @@
 # header nav
 # 导航菜单路径
 menu:
+  about: "//zlizhe.com/" 
   home: /
   archives: archives
   # tags: tags
-  # about: about
   search: search
 
 # site title 
@@ -30,7 +30,7 @@ favicon: /images/favicon.png
 # social link
 # 更多链接
 social:  
-  Github: https://github.com/zlizhe
+  #Github: https://github.com/zlizhe
   # Weibo:
 # Zhihu:
   # Facebook:
