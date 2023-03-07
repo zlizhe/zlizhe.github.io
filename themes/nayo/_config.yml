@@ -1,10 +1,10 @@
 # header nav
 # 导航菜单路径
 menu:
+  about: "//zlizhe.com/" 
   home: /
   archives: archives
   # tags: tags
-  # about: about
   search: search
 
 # site title 
@@ -17,7 +17,7 @@ title:
 # 作者信息
 # author为空时 Hexo/_config.yml 配置有效
 profile: 
-  author: 悠然画世界
+  author: Zack Lee's Playground
   # logo: /images/logo.jpg
   avatar: /images/header.jpg  
   #description: Zack Lee
@@ -129,8 +129,8 @@ mathjax:
 # footer
 # 网站底部信息
 footer:
-  author: Zack Lee | 悠然画世界
-  since: 2023
+  author: Zack Lee | Playground
+  since: 2015
 
 
 # theme version
